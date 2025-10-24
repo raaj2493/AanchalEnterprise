@@ -72,13 +72,23 @@ app.use((req, res, next) => {
   // It is the only port that is not firewalled.
   const port = Number(process.env.PORT || 5000);
   const host = process.env.HOST || '127.0.0.1';
+  let attempts = 0;
+  const maxAttempts = 5;
 
-  server.listen(port, host, () => {
-    console.log(`Server listening on http://${host}:${port}`);
-  });
+  function startServer(p: number) {
+    server.listen(p, host, () => {
+      console.log(`Server listening on http://${host}:${p}`);
+    }).on('error', (err: NodeJS.ErrnoException) => {
+      if (err.code === 'EADDRINUSE' && attempts < maxAttempts) {
+        attempts++;
+        console.warn(`Port ${p} in use — trying ${p + 1} (attempt ${attempts}/${maxAttempts})`);
+        startServer(p + 1);
+      } else {
+        console.error('Server failed to start:', err);
+        process.exit(1);
+      }
+    });
+  }
 
-  server.on('error', (err) => {
-    console.error('Server failed to start:', err);
-    process.exit(1);
-  });
+  startServer(port);
 })();
