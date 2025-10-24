@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@assets/WhatsApp Image 2025-10-24 at 12.56.15 (1)_1761291019714.jpeg";
+import heroImage from "@assets/generated_images/Premium_residential_building_hero_dee80a44.png";
 
 export default function Hero() {
   const scrollToProperties = () => {
