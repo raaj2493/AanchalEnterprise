@@ -17,7 +17,7 @@ export default function Hero() {
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-          Aanchal Enterprise
+          Aanchal Enterprises
         </h1>
         <p className="text-xl md:text-2xl text-white/95 mb-4 font-medium">
           Your Trusted Partner in Premium Residential Properties
