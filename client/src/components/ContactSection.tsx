@@ -5,6 +5,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Phone, Mail, MessageCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
 
 export default function ContactSection() {
   const { toast } = useToast();
@@ -15,14 +17,30 @@ export default function ContactSection() {
     message: ""
   });
 
+  const contactMutation = useMutation({
+    mutationFn: async (data: typeof formData) => {
+      const res = await apiRequest("POST", "/api/contact", data);
+      return await res.json();
+    },
+    onSuccess: () => {
+      toast({
+        title: "Message Sent!",
+        description: "We'll get back to you shortly.",
+      });
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    },
+    onError: () => {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    },
+  });
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    toast({
-      title: "Message Sent!",
-      description: "We'll get back to you shortly.",
-    });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    contactMutation.mutate(formData);
   };
 
   return (
@@ -81,8 +99,13 @@ export default function ContactSection() {
                     data-testid="input-message"
                   />
                 </div>
-                <Button type="submit" className="w-full" data-testid="button-submit-contact">
-                  Send Message
+                <Button 
+                  type="submit" 
+                  className="w-full" 
+                  disabled={contactMutation.isPending}
+                  data-testid="button-submit-contact"
+                >
+                  {contactMutation.isPending ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </CardContent>
