@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="font-bold text-lg mb-3">Aanchal Enterprise</h3>
+            <h3 className="font-bold text-lg mb-3">Aanchal Enterprises</h3>
             <p className="text-sm text-muted-foreground">
               Your trusted partner in finding premium residential properties across multiple reputed projects.
             </p>
@@ -54,7 +54,7 @@ export default function Footer() {
 
         <div className="border-t border-border pt-8 text-center">
           <p className="text-sm text-muted-foreground">
-            © 2025 Aanchal Enterprise. All rights reserved.
+            © 2025 Aanchal Enterprises. All rights reserved.
           </p>
         </div>
       </div>
