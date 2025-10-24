@@ -1,0 +1,93 @@
+Create a clean, modern, and mobile-responsive website for Anchal Enterprise, a trusted property advisory firm specializing in multiple reputed residential projects. The platform provides transparent property details, pricing, floor plans, and easy contact options to help buyers make informed decisions.
+
+Design/Theme:
+Light, minimal theme with soft pastel or white backgrounds and subtle gold or blue accents
+
+Modern sans-serif fonts (Poppins, Inter)
+
+Spacious layouts using rounded cards, clean lines, soft shadows
+
+Responsive design and smooth, subtle animations for elegant user experience
+
+Content / Structure:
+Homepage:
+
+Hero banner with company name Anchal Enterprise and tagline:
+“Your Trusted Partner in Premium Residential Properties”
+
+Brief intro about connecting buyers to multiple premium projects
+
+Call to action: “Explore Our Properties”
+
+Project & Properties Section:
+Projects displayed with cards or tabs, each listing property types, sizes, and pricing:
+
+Lucky Homes:
+
+3BHK Flats: 1700, 1750, 1800 Sq. Ft; ₹75.99L to ₹79.99L
+
+4BHK Flat 2200 Sq. Ft; ₹95.99L
+
+Floor Pricing: UGF ₹1,50,000; First Floor ₹1,00,000; Second Floor ₹75,000
+
+Meter Connection Charge ₹50,000 (for 3KW)
+
+Calista Heights (Radhike Groupe / GoldenSpace Buildcon):
+
+3BHK Premium Floor 1720 Sq. Ft at ₹1.03 Cr
+
+4BHK Penthouse 2775 Sq. Ft at ₹1.66 Cr
+
+Additional charges for development, parking, club membership, power backup
+
+Payment plans with milestone payments as previously described
+
+Radhika Group:
+
+2 BHK: 950 Sq. Ft, ₹55 Lacs
+
+3 BHK: 1450 Sq. Ft, ₹75 Lacs
+
+Maharishi Enclave:
+
+3 BHK: 1400 Sq. Ft, ₹85 Lacs
+
+3 BHK: 1700 Sq. Ft, ₹1.02 Cr
+
+Vihaan Group:
+
+2 BHK: 980 Sq. Ft, ₹45 Lacs
+
+3 BHK: 1550 Sq. Ft, ₹65 Lacs
+
+Payment Plan Section:
+
+Include Lucky Homes and Calista Heights plans with booking amounts and milestones
+
+Note: Interest @ 18% p.a. on delayed payments
+
+Project Highlights Section:
+
+Features such as Common Roof, Modular Kitchen, Gated Society, False Ceiling, Club, Gym, Smart Locks, RCC Structures, Solar Lighting, and 24x7 security
+
+Contact Section:
+
+Call to action: “Book a Site Visit or Request More Information”
+
+Contact form fields: Name, Email, Phone, Message
+
+Direct contact details:
+Phone: 9667753506
+Email: Aanchalrealestate3506@gmail.com
+
+Include social media and WhatsApp links
+
+Footer:
+
+Light grey background with centered contact info and copyright:
+© 2025 Anchal Enterprise
+
+AI Assistant Enhancements:
+Add testimonial carousel, mortgage calculator placeholder, and project location maps.
+
+Ensure intuitive tabbed or card navigation between projects.
